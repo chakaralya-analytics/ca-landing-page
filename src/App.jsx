@@ -12,15 +12,24 @@ function App() {
     return (
         <>
             <Navbar />
-            <Landing />
-            <InfoCard />
-            <PriceCard />
-            <InformationCard />
-            <FAQ />
-            <Footer />
-            {/* <Element id="home" className="section">
-                <Fade direction="up"></Fade>
-            </Element> */}
+            <Element id="home_scroll" className="section">
+                <Landing />
+            </Element>
+            <Element id="services_scroll" className="section">
+                <InfoCard />
+            </Element>
+            <Element id="pricing_scroll" className="section">
+                <PriceCard />
+            </Element>
+            <Element id="about_scroll" className="section">
+                <InformationCard />
+            </Element>
+            <Element id="faq_scroll" className="section">
+                <FAQ />
+            </Element>
+            <Element id="contact_scroll" className="section">
+                <Footer />
+            </Element>
         </>
     );
 }

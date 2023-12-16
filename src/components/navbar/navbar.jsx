@@ -10,10 +10,12 @@ const navigation = [
         current: true,
         linkto: "",
     },
-    { name: "Home", href: "#", current: false, linkto: "home" },
-    { name: "About", href: "#", current: false, linkto: "about" },
-    { name: "Services", href: "#", current: false, linkto: "services" },
-    { name: "Contact", href: "#", current: false, linkto: "contact" },
+    { name: "Home", href: "#", current: false, linkto: "home_scroll" },
+    { name: "About", href: "#", current: false, linkto: "about_scroll" },
+    { name: "Services", href: "#", current: false, linkto: "services_scroll" },
+    { name: "Pricing", href: "#", current: false, linkto: "pricing_scroll" },
+    { name: "FAQs", href: "#", current: false, linkto: "faq_scroll" },
+    { name: "Contact", href: "#", current: false, linkto: "contact_scroll" },
 ];
 
 function classNames(...classes) {
@@ -30,11 +32,6 @@ export default function Navbar() {
                             <div className="relative flex h-16 items-center justify-between">
                                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                                     <div className="flex flex-shrink-0 items-center text-white text-3xl">
-                                        {/* <img
-                                            className="h-8 w-auto"
-                                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                                            alt="Chakaralaya Analytics"
-                                        /> */}
                                         CHAKARALAYA ANALYTICS
                                     </div>
                                     <div className="hidden sm:ml-6 sm:block">
