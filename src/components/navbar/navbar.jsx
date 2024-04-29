@@ -4,12 +4,12 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-    {
-        name: "Login",
-        href: "https://www.google.com",
-        current: true,
-        linkto: "",
-    },
+    // {
+    //     name: "Login",
+    //     href: "https://www.google.com",
+    //     current: true,
+    //     linkto: "",
+    // },
     { name: "Home", href: "#", current: false, linkto: "home_scroll" },
     { name: "About", href: "#", current: false, linkto: "about_scroll" },
     { name: "Services", href: "#", current: false, linkto: "services_scroll" },

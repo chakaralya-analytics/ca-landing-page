@@ -6,7 +6,7 @@ function PriceCard() {
         <>
             <div className="flex flex-col items-center justify-center min-h-screen  text-gray-700  mx-auto max-w-7xl">
                 <h2 className="text-4xl font-medium">Choose a Plan</h2>
-                <h3 className="text-2xl  text-center my-4 font-light ">Choose the features and functionality your team need today. Easily Upgrade as your company grows.</h3>
+                <h3 className="text-2xl  text-center my-4 font-light ">Choose the features and functionality your team need today. Easily Upgrade as your company grows. Choose the most suitable plan for your team and contact us to get a quote.</h3>
 
                 {/* <!-- Component Start --> */}
                 <div className="flex flex-wrap items-center justify-center w-full  mt-8">
@@ -14,11 +14,11 @@ function PriceCard() {
                         <div className="flex flex-col items-center p-10 bg-gray-200">
                             <span className="font-semibold">Basic</span>
                             <div className="flex items-center">
-                                <span className="text-3xl">$</span>
-                                <span className="text-5xl font-bold">0</span>
+                                <span className="text-3xl">Contact Us</span>
+                                {/* <span className="text-5xl font-bold">0</span>
                                 <span className="text-2xl text-gray-500">
                                     /mo
-                                </span>
+                                </span> */}
                             </div>
                             <div className="font-semibold">
                                 Up to 25 units
@@ -128,11 +128,11 @@ function PriceCard() {
                         <div className="flex flex-col items-center p-10 bg-gray-200">
                             <span className="font-semibold">Profesional</span>
                             <div className="flex items-center">
-                                <span className="text-3xl">$</span>
-                                <span className="text-6xl font-bold">250</span>
+                                <span className="text-3xl">Contact Us</span>
+                                {/* <span className="text-6xl font-bold">250</span>
                                 <span className="text-2xl text-gray-500">
                                     /mo
-                                </span>
+                                </span> */}
                             </div>
                             <div className="font-semibold">
                                 Up to 300 units
@@ -242,11 +242,11 @@ function PriceCard() {
                     <div className="flex flex-col items-center p-10 bg-gray-200">
                             <span className="font-semibold">Business</span>
                             <div className="flex items-center">
-                                <span className="text-3xl">$</span>
-                                <span className="text-5xl font-bold">70</span>
+                                <span className="text-3xl">Contact Us</span>
+                                {/* <span className="text-5xl font-bold">70</span>
                                 <span className="text-2xl text-gray-500">
                                     /mo
-                                </span>
+                                </span> */}
                             </div>
                             <div className="font-semibold">
                                 Up to 75 units
