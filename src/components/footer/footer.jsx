@@ -5,6 +5,10 @@ export default function Footer() {
                 
                 {/* <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> */}
                 <div class="text-center">
+                <p class="text-gray-500">Phone: +91 99400 66376</p> {/* Add this line */}
+                    <p class="text-gray-500">Email: sudarsanam.sk@gmail.com</p> {/* And this line */}
+                    <p></p>
+                    <br />
                     <a
                         href="#"
                         class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white"
@@ -12,10 +16,13 @@ export default function Footer() {
                         {/* <img src="./images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" /> */}
                         Chakaralaya Analytics
                     </a>
+                    
                     <span class="block text-sm text-center text-gray-500 dark:text-gray-400">
                         © 2023-2024 Chakaralaya Analytics™. All Rights
                         Reserved.
                     </span>
+                    {/* <ul class="flex justify-center mt-5 space-x-5"> */}
+                    {/* ... */}
                     {/* <ul class="flex justify-center mt-5 space-x-5">
                     <li>
                         <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
