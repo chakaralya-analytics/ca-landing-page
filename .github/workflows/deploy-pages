@@ -1,30 +1,36 @@
 name: GitHub Pages
-
 on:
   push:
     branches:
-      - main # Change this to your main branch name if different (e.g., master)
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
-
+        uses: actions/checkout@v4
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '16' # Or your preferred Node.js version
-
+          node-version: '20'
+          cache: 'npm'
       - name: Install dependencies
         run: npm install
-
       - name: Build website
         run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          artifact-dir: dist # The directory containing your built website
-          github-token: ${{ secrets.GITHUB_TOKEN }} # Use the built-in GITHUB_TOKEN secret
+          path: './dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
